@@ -8,5 +8,12 @@ test_that("lib_summary() returns expected results", {
 })
 
 test_that("lib_summary() fails appropriately", {
-  expect_error(lib_summary("foo"), "unused argument")
+  #doesn't have to match on the entire error message - can take out (TRUE/FALSE)
+  expect_error(lib_summary("foo"), "sizes must be a logical value (TRUE/FALSE)", fixed = TRUE)
+})
+
+test_that("sizes argument works", {
+  res <- lib_summary(sizes = TRUE)
+  expect_equal(ncol(res), 3)
+  expect_type(res$lib_size, "double")
 })
