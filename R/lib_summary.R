@@ -30,7 +30,7 @@ lib_summary <- function(sizes = FALSE) {
   pkg_df
 }
 
-#' Title
+#' Size Function
 #'
 #' @param df a data frame of libraries
 #' @noRd
