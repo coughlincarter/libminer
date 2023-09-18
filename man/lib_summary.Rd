@@ -4,14 +4,20 @@
 \alias{lib_summary}
 \title{Library Summary}
 \usage{
-lib_summary()
+lib_summary(sizes = FALSE)
+}
+\arguments{
+\item{sizes}{A logical value indicating whether to allocate sizes.
+Defualt = \code{FALSE}}
 }
 \value{
-A \code{data.frame} containing the count of packages in each of the user's libraries
+A \code{data.frame} containing the count of packages in each of the user's libraries.
+If \code{sizes = TRUE}, a column of library sizes will be added.
 }
 \description{
 Provides a brief summary of the package libraries in your machine
 }
 \examples{
 lib_summary()
+lib_summary(sizes = TRUE)
 }
