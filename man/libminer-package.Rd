@@ -12,6 +12,7 @@ This package provides functions that allow users to explore their R libraries an
 Useful links:
 \itemize{
   \item \url{https://github.com/coughlincarter/libminer}
+  \item \url{https://coughlincarter.github.io/libminer/}
   \item Report bugs at \url{https://github.com/coughlincarter/libminer/issues}
 }
 
