@@ -30,6 +30,14 @@ lib_summary <- function(sizes = FALSE) {
   pkg_df
 }
 
+#' Title
+#'
+#' @param df a data frame of libraries
+#' @noRd
+#'
+#' @return a `data.frame` with a lib_size column
+#'
+#' @examples
 calculate_sizes <- function(df) {
   df$lib_size <- map_dbl(
     df$Library,
